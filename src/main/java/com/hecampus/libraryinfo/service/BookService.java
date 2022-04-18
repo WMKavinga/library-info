@@ -31,6 +31,7 @@ public class BookService {
 
     public BookDTO saveBook(BookDTO book) {
         Book newBook = new Book();
+        newBook.setId(book.getId());
         newBook.setName(book.getName());
         newBook.setAuthor(book.getAuthor());
         newBook.setIsbn(book.getIsbn());

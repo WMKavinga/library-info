@@ -40,7 +40,8 @@ sonarqube {
 	properties {
 		property "sonar.projectName", "library-info"
 		property "sonar.host.url", "http://localhost:9000"
-		property "sonar.login", "2201b4f0d3ad4393f39db139aa1ab7c6b63b0710"
+		property "sonar.login", "admin"
+		property "sonar.password","password"
 	}
 }
 

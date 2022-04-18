@@ -1,0 +1,21 @@
+version: "3"
+services:
+  mongo-on-docker:
+    image: mongo
+    container_name: "mongo-on-docker"
+    ports:
+      - 27017:27017
+
+  sonarqube-on-docker:
+    image: sonarqube
+    container_name: "sonarqube-on-docker"
+    ports:
+      - 9000:9000
+
+  library-info-docker:
+    image: library-info-image
+    container_name: "library-info-docker"
+    ports:
+      - 8080:8080
+    links:
+      - mongo-on-docker
